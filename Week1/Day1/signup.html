@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+
+    <h2>Create Account</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Enter your name"
+            required
+        ><br>
+        <small></small><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+        ><br>
+        <small></small><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Enter password (min 8 characters)"
+            minlength="8"
+            required
+        ><br>
+        <small></small><br><br>
+
+        <!-- Confirm Password -->
+        <label for="confirm-password">Confirm Password:</label><br>
+        <input 
+            type="password" 
+            id="confirm-password" 
+            name="confirm-password" 
+            placeholder="Confirm your password"
+            minlength="8"
+            required
+        ><br>
+        <small></small><br><br>
+
+        <button type="submit">Create Account</button>
+
+    </form>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</body>
+</html>
