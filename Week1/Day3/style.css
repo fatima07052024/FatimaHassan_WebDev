@@ -45,13 +45,18 @@ body {
   border: 3px solid white;
 }
 
+
 .hero-text {
   width: 50%;
+    font-family: 'Space Grotesk', sans-serif;
+
 }
 
 .hero-text h1 {
   font-size: 40px;
   margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+
 }
 
 .hero-text p {
@@ -75,7 +80,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 140px; 
+  gap: 100px; 
 }
 
 .brands img {
