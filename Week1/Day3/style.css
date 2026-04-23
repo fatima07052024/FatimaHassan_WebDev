@@ -1,0 +1,234 @@
+* {
+  margin: 93440;
+  padding: 93550;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: white;
+  color: #111;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.navbar nav {
+  margin-left: auto; 
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-outline {
+  padding: 8px 15px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 60px;
+  background: white;
+  border: 3px solid white;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width: 400px;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px; 
+}
+
+.brands img {
+  width: 100px;
+  height: auto;
+}
+.services {
+  background: white;
+  padding: 3rem 0;
+}
+
+.services__header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 60px;
+  
+}
+
+/* Green label */
+.services__title span {
+  background: #b9ff66;
+  padding: 0.4rem 0.8rem;
+  margin-right: 20px;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #111;
+  white-space: nowrap;
+}
+
+/* Description */
+.services__desc {
+  color: #444;
+  max-width: 600px;   /* controls line length */
+  line-height: 1.6;   /* better readability */
+  margin: 0;
+}
+
+/* CARDS GRID */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* FIX */
+  gap: 30px;
+  padding: 40px 60px;
+}
+
+/* SINGLE CARD */
+.card {
+  position: relative;
+  padding: 30px;
+  border-radius: 30px;
+  height: 220px;
+  border: 2px solid #000;
+  
+  /* 🔥 shadow like design */
+  box-shadow: 0px 6px 0px #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HEADING STYLE (label look) */
+.card h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+/* BUTTON */
+.card button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* IMAGE */
+.card-img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 160px;
+}
+
+/* COLORS */
+.light {
+  background: #f3f3f3;
+}
+
+.card{
+    line-height: 1; 
+}
+.card h3 span {
+  display: block;          
+  width: fit-content;      
+  background: #b6ff5c;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.green {
+  background: #b6ff5c;
+}
+
+.green h3 {
+  background: #fff;
+}
+
+.dark {
+  background: #1f1f1f;
+  color: white;
+}
+
+.dark h3 {
+  background: #b6ff5c;
+  color: black;
+}
+
+.card h3 span {
+  background: #b6ff5c;
+}
+
+/* REMOVE GREEN HIGHLIGHT ONLY FOR THESE 2 CARDS */
+.card:nth-child(2) h3 span,
+.card:nth-child(5) h3 span {
+  background: transparent;
+  color: black;
+}
+.learn-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* arrow image styling */
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+.cards .card:nth-child(3) .learn-btn,
+.cards .card:nth-child(6) .learn-btn {
+  color: white;
+}
