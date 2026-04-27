@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Treasure Hunt Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Treasure Hunt Game</h1>
+
+    <!-- 🔎 INPUT + SEARCH -->
+    <div class="search-box">
+      <input type="number" id="guessInput" placeholder="Enter number (1-100)" />
+      <button onclick="checkTreasure()">Search</button>
+    </div>
+
+    <!-- 🔁 TRY AGAIN BUTTON -->
+    <button class="retry-btn" onclick="resetGame()">Try Again</button>
+
+    <!-- MESSAGE -->
+    <p id="message"></p>
+
+    <!-- CARDS -->
+    <div class="grid" id="grid"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
