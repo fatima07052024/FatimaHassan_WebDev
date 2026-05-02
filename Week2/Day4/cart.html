@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  
+
+  <a href="home.html">Home</a>
+  <a href="cart.html">Cart</a>
+  <a href="product.html">Products</a>
+  <a href="checkout.html">Checkout</a>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+  <!-- Top Bar (for spacing + arrow alignment) -->
+  <div class="top-bar">
+    <a href="home.html" class="back-arrow">←</a>
+  </div>
+
+  <h2>Your Cart</h2>
+
+  <!-- Cart Items -->
+  <div id="cartItems"></div>
+
+  <!-- Total -->
+  <h3 id="total"></h3>
+
+  <!-- Checkout Button -->
+  <button class="checkout-btn" onclick="goCheckout()">Checkout</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+<div id="toast" class="toast"></div>
+</html>

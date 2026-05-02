@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <a href="home.html">Home</a>
+  <a href="cart.html">Cart</a>
+  <a href="product.html">Products</a>
+  <a href="checkout.html">Checkout</a>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+  <!-- CENTERED TITLE -->
+  <h2 class="page-title">E-Commerce Store</h2>
+
+  <div class="grid" id="products"></div>
+</div>
+
+<script src="product.js"></script>
+<script src="app.js"></script>
+
+</body>
+<div id="toast" class="toast"></div>
+</html>
